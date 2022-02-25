@@ -1,0 +1,95 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1039.2,898.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="54">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Navigate to page" sap:VirtualizedContainerService.HintSize="475.2,458.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="webLink" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome New Tab" sap:VirtualizedContainerService.HintSize="433.6,232.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="0dfe428b-3084-472d-9ccd-6c4cad76612e" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1911, -9, 2578, 1408" BrowserType="Chrome" ContentHash="uZOUZ0KdF0Kai98-0NLYBA" IconBase64="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" InformativeScreenshot="1b6da2a8146b18ad23c824e477e2b876.png" Reference="nABs1fIo1ES_QsVHtf6AyA/D5DZaGfxHkqtZKcVRyln8Q" Selector="&lt;html app='chrome.exe' /&gt;" Url="[webLink]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Log message to have a change to commit to GIT&quot;]" />
+  </Sequence>
+</Activity>
